@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial; }
+
+.title {
+  height: 70px;
+  margin-top: 30px;
+  text-align: left; }
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+    margin: none; }
+
+  .title {
+    text-align: center; }
+
+  .search {
+    text-align: center; } }
+.feed {
+  height: 550px;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+.infinite {
+  display: block; }
+
+.post {
+  background-color: #efeae2;
+  margin-bottom: 5px;
+  position: relative; }
+  .post .img {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -150px; }
+    .post .img a, .post .img img {
+      width: 100%;
+      height: 100%; }
+  .post .info {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .post .info .sub {
+      position: absolute;
+      bottom: 10px;
+      left: 160px; }
+    .post .info h1 {
+      width: 95%;
+      font-size: 25px;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0; }
+    .post .info h1:hover {
+      cursor: pointer; }
+    .post .info a, .post .info h5 {
+      margin-right: 25px;
+      display: inline-block;
+      margin-top: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+      vertical-align: bottom; }
+
+@media only screen and (max-width: 800px) {
+  .feed {
+    height: 500px; }
+
+  .post .img {
+    width: 125px;
+    height: 125px; }
+  .post .info {
+    height: 125px;
+    padding-left: 135px; }
+    .post .info .sub {
+      left: 135px;
+      font-size: 0.75em; }
+    .post .info h1 {
+      font-size: 20px; }
+    .post .info .published {
+      position: absolute;
+      bottom: 35px;
+      left: 0; } }
+.modal {
+  min-height: 550px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 3;
+  border: 5px solid #efeae2;
+  border-radius: 5px;
+  padding: 10px; }
+  .modal .info a, .modal .info h5 {
+    display: inline-block;
+    margin-right: 20px; }
+  .modal .info h1 {
+    font-size: 30px; }
+  .modal .closeButton {
+    position: absolute;
+    top: 30px;
+    right: 50px; }
+  .modal .contentContainer {
+    position: relative; }
+    .modal .contentContainer .img {
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .modal .contentContainer .content {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 250px;
+      display: inline-block;
+      vertical-align: top; }
+  .modal .tags {
+    width: 100%; }
+  .modal .tag {
+    font-size: 10px;
+    margin-left: 5px;
+    display: inline-block; }
+
+@media only screen and (max-width: 800px) {
+  .modal {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; }
+    .modal .closeButton {
+      top: 10px;
+      right: 10px; }
+    .modal .contentContainer .img {
+      position: relative;
+      width: 300px;
+      height: 300px; }
+      .modal .contentContainer .img a, .modal .contentContainer .img img {
+        width: 100%;
+        height: 100%; }
+    .modal .contentContainer .content {
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+      padding-left: 0; }
+
+  .content {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
