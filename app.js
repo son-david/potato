@@ -1,10 +1,9 @@
-var app = angular.module('app',['ngSanitize','infinite-scroll'])
+var app = angular.module('app',['ngSanitize'])
 var jsonFlickrFeed;
 
 app.controller('mainControl', function ($scope, service) {
 
   $scope.data;
-  $scope.newdata;
 
   $scope.modalShow = false;
   $scope.modal = null;
@@ -55,14 +54,6 @@ app.controller('mainControl', function ($scope, service) {
     text = text[text.length-1];
     return text.innerText || text.textContent;
   }
-
-  $scope.test = function () {
-    service.getFeed(function (data) {
-      console.log(typeof data);
-      $scope.newdata = data;
-    });
-  }
-
 });
 
 
